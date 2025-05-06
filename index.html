@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mis 15 - Florencia (EL EDITABLE)</title>
+  <title>Mis 15 - Renata</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -56,10 +56,33 @@
   <!-- Reloj que une ambas secciones -->
   <div class="relative z-20">
     <div class="absolute left-1/2 bottom-[-200px] translate-x-[-50%] z-20 w-[350px] h-[350px] flex items-center justify-center">
+      
       <!-- Reloj más pequeño centrado -->
-      <div class="w-[230px] h-[230px] bg-white rounded-full flex items-center justify-center relative z-10 bottom-[20px]">
-        <span class="text-pink-700 font-bold text-2xl">RELOJ</span>
+      <div class="w-[230px] h-[230px] bg-white rounded-full flex flex-col items-center justify-center relative z-10 bottom-[20px] shadow-md">
+        <p class="text-sm text-pink-600 font-semibold mb-1">Faltan:</p>
+        <div class="flex space-x-1 text-center">
+          <div class="flex flex-col items-center px-1">
+            <span id="days" class="text-base font-bold text-gray-800">00</span>
+            <span class="text-[10px] text-neutral-500">días</span>
+          </div>
+          <span class="text-pink-500 font-bold">|</span>
+          <div class="flex flex-col items-center px-1">
+            <span id="hours" class="text-base font-bold text-gray-800">00</span>
+            <span class="text-[10px] text-neutral-500">hs</span>
+          </div>
+          <span class="text-pink-500 font-bold">|</span>
+          <div class="flex flex-col items-center px-1">
+            <span id="minutes" class="text-base font-bold text-gray-800">00</span>
+            <span class="text-[10px] text-neutral-500">min</span>
+          </div>
+          <span class="text-pink-500 font-bold">|</span>
+          <div class="flex flex-col items-center px-1">
+            <span id="seconds" class="text-base font-bold text-gray-800">00</span>
+            <span class="text-[10px] text-neutral-500">seg</span>
+          </div>
+        </div>
       </div>
+  
       <!-- Marco más grande -->
       <img src="imagenes/—Pngtree—pink flower wedding frame_16939747.png" alt="Marco de reloj" class="absolute w-full h-full object-contain z-20" />
     </div>
