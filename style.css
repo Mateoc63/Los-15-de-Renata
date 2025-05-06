@@ -76,7 +76,6 @@ body {
 }
 
 path {
-  fill: none;
   stroke-width: 1.5; /* Más fino */
 }
 
@@ -97,4 +96,15 @@ path {
   bottom: 1rem;
   z-index: 0;
   opacity: 0.8;
+}
+
+@media screen and (max-width:786px) {
+  .detalles{
+    margin-top: -150px;
+  }
+}
+@media screen and (max-width:400px) {
+  .detalles{
+    margin-top: 50px;
+  }
 }
