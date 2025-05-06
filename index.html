@@ -78,7 +78,6 @@
           <div class="banner mx-auto">Fiesta</div>
         </div>
         
-        <!-- ELIMINAR EL COLOR ACA -->
         <div class="w-full max-w-6xl z-10 px-6 detalles">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center items-center justify-center mt-0">
   
@@ -111,17 +110,62 @@
   
           </div>
         </div>
-    </div>
-    </div>
+      </div>
+      <div class="curvas-container">
+        <!-- Líneas onduladas fijas -->
+        <svg class="ondas" viewBox="0 0 1000 300" preserveAspectRatio="none">
+          <path class="linea" d="M0,150 C200,50 800,250 1000,150" stroke="#ff69b4" />
+          <path class="linea" d="M0,130 C300,230 700,30 1000,130" stroke="#ff1493" />
+          <path class="linea" d="M0,170 C250,270 750,70 1000,170" stroke="#db7093" />
+        </svg>
+      </div>
+
+      <!-- NUEVO BORRABLE -->
+      <div class="min-h-screen text-pink-900 flex flex-col items-center justify-center p-8 carrusel">
+    
+        <!-- Título -->
+        <h1 class="titulo text-5xl md:text-6xl text-pink-700 mb-0 drop-shadow-md">Renata</h1>
+        <p class="text-pink-600 italic text-lg mb-2">Mis 15 años</p>
+      
+        <!-- Cámara + frase -->
+        <div class="text-center mb-6">
+          <div class="flex justify-center mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-rose-400 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7h3l2-3h8l2 3h3a2 2 0 012 2v9a2 2 0 01-2 2H3a2 2 0 01-2-2V9a2 2 0 012-2z" />
+              <circle cx="12" cy="13" r="3.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <p class="text-rose-500 italic text-base">Una noche mágica que vivirá por siempre en nuestros recuerdos...</p>
+        </div>
+      
+        <!-- Carrusel de imágenes -->
+        <div class="relative max-w-2xl w-full overflow-hidden rounded-[2rem] border-[3px] border-rose-200 shadow-2xl backdrop-blur-lg h-80 md:h-[26rem]">
+          <div class="flex transition-transform duration-[1.2s] ease-in-out h-full" id="carousel-images">
+            <img src="imagenes/editar.xv.jpg" class="w-full flex-shrink-0 object-cover h-full" alt="Imagen 1">
+            <img src="imagenes/editar.xv.jpg" class="w-full flex-shrink-0 object-cover h-full" alt="Imagen 2">
+            <img src="imagenes/editar.xv.jpg" class="w-full flex-shrink-0 object-cover h-full" alt="Imagen 3">
+          </div>
+      
+          <!-- Indicadores -->
+          <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-3" id="indicators">
+            <span class="w-2.5 h-2.5 rounded-full transition-all duration-300 border border-rose-300"></span>
+            <span class="w-2.5 h-2.5 rounded-full transition-all duration-300 border border-rose-300"></span>
+            <span class="w-2.5 h-2.5 rounded-full transition-all duration-300 border border-rose-300"></span>
+          </div>
+        </div>
+      </div>
   </div>
 
-  <!-- Resto de contenido -->
-  <div class="bg-pink-50 text-pink-900 text-center py-32 px-6">
-    <h3 class="text-4xl font-semibold mb-8">¡Faltás vos para que esta noche sea perfecta!</h3>
-    <p class="text-xl max-w-3xl mx-auto leading-relaxed">
-      Prepará tu mejor sonrisa, tus ganas de bailar y venite a vivir una noche llena de emoción, sorpresas y mucha magia 💫. Te espero con todo mi corazón.
-    </p>
-  </div>
+
+  <!-- A PARTIR DE ACA BORRAR
+  <div class="curvas-container">
+    Líneas onduladas fijas
+    <svg class="ondas" viewBox="0 0 1000 300" preserveAspectRatio="none">
+      <path class="linea" d="M0,150 C200,50 800,250 1000,150" stroke="#ff69b4" />
+      <path class="linea" d="M0,130 C300,230 700,30 1000,130" stroke="#ff1493" />
+      <path class="linea" d="M0,170 C250,270 750,70 1000,170" stroke="#db7093" />
+    </svg>
+  </div> -->
 
   <!-- Script para detectar cuando aparece la flor -->
   <script src="js/index.js"></script>

@@ -17,3 +17,26 @@ const observer = new IntersectionObserver(
 
 observer.observe(flor);
 });
+/*------------CARRUSEL-------------*/
+const carousel = document.getElementById('carousel-images');
+const totalSlides = carousel.children.length;
+const indicators = document.getElementById('indicators').children;
+let currentIndex = 0;
+
+function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    for (let i = 0; i < indicators.length; i++) {
+    indicators[i].classList.remove('bg-rose-600', 'scale-125', 'opacity-100');
+    indicators[i].classList.add('bg-rose-200', 'opacity-60');
+    }
+    indicators[currentIndex].classList.remove('bg-rose-200', 'opacity-60');
+    indicators[currentIndex].classList.add('bg-rose-600', 'scale-125', 'opacity-100');
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateCarousel();
+}
+
+setInterval(nextSlide, 3000);
+updateCarousel();
