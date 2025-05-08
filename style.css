@@ -138,10 +138,16 @@ path {
   .carrusel{
     margin-top: -500px;
   }
+  .detalles{
+    margin-top: -150px;
+  }
+  footer{
+    padding: 30px;
+  }
 }
 @media screen and (max-width:400px) {
   .detalles{
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .curvas-container {
     margin-top: -100px;
