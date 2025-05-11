@@ -11,42 +11,6 @@ html {
   background-size: cover;
   background-position: center;
 }
-/* Animación de brillitos flotando */
-.sparkle::before {
-  content: "💖";
-  position: absolute;
-  animation: float 5s infinite ease-in-out;
-  font-size: 2rem;
-  opacity: 0.5;
-}
-@keyframes float {
-  0% {
-    top: 100%;
-    left: 50%;
-    opacity: 0;
-    transform: translateX(-50%) scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(-50%) scale(1.3);
-  }
-  100% {
-    top: -10%;
-    opacity: 0;
-    transform: translateX(-50%) scale(1);
-  }
-}
-@keyframes heartMove {
-  0% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-20px) rotate(0deg);
-  }
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-}
 .curvas-container {
   position: relative;
   height: 550px; 
@@ -131,28 +95,47 @@ path {
   letter-spacing: 0.3px;
 }
 /*-------RESPONSIVE-----------*/
+@media screen and (max-width:2000px) {
+  .debajo-reloj{
+    margin-top: 10px;
+  }
+  .detalles{
+    margin-top: -250px;
+  }
+  .curvas-container {
+    margin-top: -420px;
+  }
+  .titulo{
+    margin-top: 150px;
+  }
+  .carrusel{
+    margin-top: -500px;
+    margin-bottom: 250px;
+  }
+}
 @media screen and (max-width:786px) {
   .detalles{
     margin-top: -150px;
   }
-  .carrusel{
-    margin-top: -500px;
+  .curvas-container {
+    margin-top: -320px;
   }
-  .detalles{
-    margin-top: -150px;
+  .carrusel{
+    margin-top: -600px;
+    margin-bottom: 70px;
   }
   footer{
-    padding: 30px;
+    padding: 40px;
   }
 }
 @media screen and (max-width:400px) {
   .detalles{
-    margin-top: 0px;
+    margin-top: 50px;
   }
   .curvas-container {
     margin-top: -100px;
   }
   .carrusel{
-    margin-top: -400px;
+    margin-top: -520px;
   }
 }
