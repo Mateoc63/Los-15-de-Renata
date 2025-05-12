@@ -108,16 +108,21 @@
             <div class="space-y-4">
               <h2 class="text-xl font-semibold">DÍA</h2>
               <p class="text-gray-700 text-base">Sábado 5 de Julio - 20:00hs</p>
-              <button class="bg-rose-300 hover:bg-rose-400 text-white text-sm font-medium px-8 py-3 rounded-full shadow transition">
+              <a
+                href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Los 15 de Renata 🎉&dates=20250705T230000Z/20250706T000000Z&details=Te%20espero%20para%20compartír%20una%20noche%20única%20💖&location=Raphsodia Eventos&sf=true&output=xml"
+                target="_blank"
+                class="bg-rose-300 hover:bg-rose-400 text-white text-sm font-medium px-8 py-3 rounded-full shadow transition inline-block"
+              >
                 Agendar
-              </button>
+              </a>
             </div>
+
   
             <!-- Lugar -->
             <div class="space-y-4">
               <h2 class="text-xl font-semibold">LUGAR</h2>
               <p class="text-gray-700 text-base">Salón Raphsodia Eventos</p>
-              <button class="bg-rose-300 hover:bg-rose-400 text-white text-sm font-medium px-8 py-3 rounded-full shadow transition">
+              <button class="bg-rose-300 hover:bg-rose-400 text-white text-sm font-medium px-8 py-3 rounded-full shadow transition" onclick="confirmarAsistencia()">
                 Confirmar asistencia
               </button>
             </div>
@@ -126,7 +131,7 @@
             <div class="space-y-4">
               <h2 class="text-xl font-semibold">DIRECCIÓN</h2>
               <p class="text-gray-700 text-base">Av. Sarmiento 2000</p>
-              <button class="bg-rose-300 hover:bg-rose-400 text-white text-sm font-medium px-8 py-3 rounded-full shadow transition">
+              <button class="bg-rose-300 hover:bg-rose-400 text-white text-sm font-medium px-8 py-3 rounded-full shadow transition maps" onclick="abrirMaps()">
                 ¿Cómo llegar?
               </button>
             </div>
@@ -192,7 +197,16 @@
           <h2 class="text-xl font-bold text-gray-800 mb-4 z-10 relative titulo-detalle">MÚSICA</h2>
           <div class="text-5xl mb-4 text-rose-300 z-10 relative">🎵</div>
           <p class="mb-6 text-gray-600 z-10 relative p-detalles">¿Cuál es la canción que no debe faltar en la playlist de la fiesta?</p>
-          <button class="bg-rose-400 hover:bg-rose-500 text-white py-2 px-6 rounded-full shadow transition-all z-10 relative boton-detalles">Sugerir canción</button>
+          <button class="bg-rose-400 hover:bg-rose-500 text-white py-2 px-6 rounded-full shadow transition-all z-10 relative boton-detalles">
+            <!-- cambiar el link por la playlist de renata -->
+            <a
+              href="https://open.spotify.com/playlist/2JBkXjAbVxBn2wJSMnDue4?si=181fcb8cfa324e7c"
+              target="_blank"
+              class="text-white text-sm font-medium px-2 py-0 rounded-full transition inline-block"
+            >
+              Sugerír canción
+            </a>
+            </button>
         </div>
       </div> 
       <!-- Tarjeta Dress Code -->
