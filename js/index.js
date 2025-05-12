@@ -71,8 +71,8 @@ function abrirMaps() {
 }
 
 function confirmarAsistencia() {
-    const mensaje = encodeURIComponent("¡Hola! Confirmo mi asistencia al evento en Raphsodia Eventos 🎉");
-    const telefono = "5493329637757";
+    const mensaje = encodeURIComponent("¡Confirmo mi asistencia a los 15 de Rena 🎉");
+    const telefono = "5493329339994";
     const url = `https://wa.me/${telefono}?text=${mensaje}`;
     window.open(url, "_blank");
 }
