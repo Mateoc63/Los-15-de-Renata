@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 .parallax {
-  background-image: url('imagenes/editar.xv.jpg');
+  background-image: url('imagenes/WhatsApp\ Image\ 2025-05-16\ at\ 18.09.47.jpeg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -96,6 +96,10 @@ path {
 }
 /*-------RESPONSIVE-----------*/
 @media screen and (max-width:2000px) {
+  .parallax {
+    background-image: url('imagenes/carrusel.jpeg');
+    background-position-y: 0px;
+  }
   .debajo-reloj{
     margin-top: 10px;
   }
